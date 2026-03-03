@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Aadnya! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <canvas id="confetti"></canvas>
+    
+    <div class="container">
+        <div class="birthday-card">
+            <div class="title-section">
+                <h1 class="happy-birthday">Happy Birthday</h1>
+                <h2 class="name">Aadnya! 🎂</h2>
+                <div class="date">March 3rd, 2026</div>
+            </div>
+            
+            <div class="balloons">
+                <div class="balloon red"></div>
+                <div class="balloon blue"></div>
+                <div class="balloon yellow"></div>
+                <div class="balloon pink"></div>
+                <div class="balloon green"></div>
+            </div>
+            
+            <div class="messages-section">
+                <h3>✨ Special Messages ✨</h3>
+                
+                <div class="message-box your-message">
+                    <div class="message-header">💌 A Special Letter From Your Best Friend</div>
+                    <div class="message-content" id="yourMessage">
+                        <!-- Your personal message will go here -->
+                        <p>Click the button below to add your special message! ❤️</p>
+                        <button class="edit-btn" onclick="editMessage()">Add Your Letter</button>
+                        <textarea id="messageInput" placeholder="Write your heartfelt birthday message here..."></textarea>
+                        <button class="save-btn" onclick="saveMessage()">Save Message</button>
+                    </div>
+                </div>
+                
+                <div class="message-box">
+                    <div class="message-header">⭐ Wishing You</div>
+                    <div class="message-content">
+                        <p>A day filled with laughter, joy, and all your favorite things!</p>
+                    </div>
+                </div>
+                
+                <div class="message-box">
+                    <div class="message-header">🎊 Another Year Older</div>
+                    <div class="message-content">
+                        <p>But definitely not wiser... let's keep causing trouble together! 😄</p>
+                    </div>
+                </div>
+                
+                <div class="message-box">
+                    <div class="message-header">🎈 May This Year Bring</div>
+                    <div class="message-content">
+                        <p>More adventures, more laughs, and unforgettable memories with amazing people like you!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cake-section">
+                <div class="cake">
+                    <div class="cake-layer"></div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-layer"></div>
+                    <div class="candle"></div>
+                    <div class="flame"></div>
+                </div>
+                <p class="cake-text">Make a wish! 🔥</p>
+            </div>
+            
+            <button class="celebration-btn" onclick="triggerCelebration()">🎉 CELEBRATE! 🎉</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
